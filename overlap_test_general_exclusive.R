@@ -13,7 +13,7 @@
 # 7   geneList2     gene2
 # 8   geneList2     gene3
 # 9   geneList2     gene4
-# 
+
 # E.g. constructor
 df <- data.frame(x = c(rep("opc12_female",length(hetGenes_opc12_female)),
                        rep("opc12_male",length(hetGenes_opc12_male)),
@@ -90,4 +90,8 @@ overlap.test <- function(df,nGenes,nSim) {
 
 res <- overlap.test(df,4000,100)
 
+res$padj <- 1-(1-res$p.value)^(nrow(res))
+
 res
+
+
