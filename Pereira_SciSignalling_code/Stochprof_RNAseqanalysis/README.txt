@@ -1,0 +1,1 @@
+To search MCF10A-5E 10cell RNAseq dataset for covariates with JUND cluster, to produce Fig 2A in ‘Sporadic activation of an oxidative stress-dependent NRF2–p53 signaling network in breast epithelial spheroids and premalignancies’ manuscript
